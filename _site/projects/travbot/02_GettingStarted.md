@@ -1,17 +1,18 @@
 ---
 layout: layouts/post-sidebar.njk
-title: 'Getting Started'
+title: Getting Started
+summary: A Discord bot built with modularity in mind.
 sidebar: travbot
-summary: 
 eleventyNavigation:
   key: gettingstarted
-  title: 'Getting Started'
+  title: "Getting Started"
   parent: travbot
-  order: 2
+  order: 5
 tags:
   - project
   - travbot
 ---
+
 # Getting Started
 
 1. `npm install`

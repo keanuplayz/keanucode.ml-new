@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: "A Quiet Night."
 summary: "This is more of a personal post. I just want to write something."
-hero: /images/posts/travbot.png
-thumb: /images/posts/travbot.png
+hero: /images/posts/quiet-night.jpg
+thumb: /images/posts/quiet-night.jpg
 tags:
   - Misc
 ---

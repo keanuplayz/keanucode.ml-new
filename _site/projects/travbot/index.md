@@ -1,11 +1,13 @@
 ---
 layout: layouts/post-sidebar.njk
-hero: /images/screenshot.gif
-title: 'TravBot: A Modular Discord Bot'
-summary: Rewrite of TravBot to Discord.JS v12 in TypeScript. Revision 4 of TravBot, version number 3.
+title: "RavVeal: Introduction"
+summary: A markdown first slide framework based on the awesome reveal.js, with multiple presentations, custom layouts and a whole lot more."
 sidebar: travbot
 eleventyNavigation:
   key: travbot
   parent: projects
 ---
-haha welcome to travbot eeeeeee
+
+# TravBot
+
+TravBot is a Discord bot built with modularity in mind.

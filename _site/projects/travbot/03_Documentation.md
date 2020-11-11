@@ -1,17 +1,15 @@
 ---
 layout: layouts/post-sidebar.njk
-title: 'Documentation'
+title: Features
+summary: A Discord bot built with modularity in mind.
 sidebar: travbot
-summary: 
 eleventyNavigation:
-  key: documentation
-  title: 'Documentation'
+  key: features
+  title: "Features"
   parent: travbot
-  order: 3
-tags:
-  - project
-  - travbot
+  order: 4
 ---
+
 # What this is
 
 This is a user-friendly version of the project's structure (compared to the amalgamation that has become [specifications](Specifications.md) which is just a list of design decisions and isn't actually helpful at all for understanding the code). This will follow the line of logic that the program would run through.
@@ -38,7 +36,7 @@ When you start the program, it'll run the code in `index` (meaning both `src/ind
 A valid command file must be located in `commands` and export a default `Command` instance. Assume that we're working with `commands/money.ts`.
 
 ```js
-import Command from '../core/command';
+import Command from "../core/command";
 export default new Command({
   //...
 });
@@ -50,25 +48,25 @@ The `run` property can be either a function or a string. If it's a function, you
 - `%prefix%` gets the bot's current prefix in the selected server.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
-  run: '%author%, make sure to use the prefix! (%prefix)',
+  run: "%author%, make sure to use the prefix! (%prefix)",
 });
 ```
 
 ...is equal to...
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
-import { getPrefix } from '../core/structures';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
+import { getPrefix } from "../core/structures";
 export default new Command({
   async run($: CommonLibrary): Promise<any> {
     $.channel.send(
       `${$.author.toString()}, make sure to use the prefix! (${getPrefix(
-        $.guild,
-      )})`,
+        $.guild
+      )})`
     );
   },
 });
@@ -79,8 +77,8 @@ Now here's where it gets fun. The `Command` class is a recursive structure, cont
 - `subcommands` is used for specific keywords for accessing a certain command. For example, `$eco pay` has a subcommand of `pay`.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
   subcommands: {
     pay: new Command({
@@ -93,8 +91,8 @@ export default new Command({
 There's also `user` which listens for a ping or a Discord ID, `<@237359961842253835>` and `237359961842253835` respectively. The argument will be a `User` object.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
   user: new Command({
     async run($: CommonLibrary): Promise<any> {
@@ -107,8 +105,8 @@ export default new Command({
 There's also `number` which checks for any number type except `Infinity`, converting the argument to a `number` type.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
   number: new Command({
     async run($: CommonLibrary): Promise<any> {
@@ -121,8 +119,8 @@ export default new Command({
 And then there's `any` which catches everything else that doesn't fall into the above categories. The argument will be a `string`.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
   any: new Command({
     async run($: CommonLibrary): Promise<any> {
@@ -141,12 +139,12 @@ Of course, maybe you just want to get string arguments regardless, and since eve
 - `usage`: Provide a custom usage for the help menu. Do note that this is relative to the subcommand, so the below will result in `$money pay <user> <amount>`.
 
 ```js
-import Command from '../core/command';
-import { CommonLibrary } from '../core/lib';
+import Command from "../core/command";
+import { CommonLibrary } from "../core/lib";
 export default new Command({
   subcommands: {
     pay: new Command({
-      usage: '<user> <amount>',
+      usage: "<user> <amount>",
     }),
   },
 });
@@ -206,7 +204,7 @@ This modularizes certain patterns of code to make things easier.
 - `$.paginate()`: Takes a message and some additional parameters and makes a reaction page with it. All the pagination logic is taken care of but nothing more, the page index is returned and you have to send a callback to do something with it.
 
 ```js
-const pages = ['one', 'two', 'three'];
+const pages = ["one", "two", "three"];
 const msg = await $.channel.send(pages[0]);
 $.paginate(msg, $.author.id, pages.length, (page) => {
   msg.edit(pages[page]);
@@ -216,7 +214,7 @@ $.paginate(msg, $.author.id, pages.length, (page) => {
 - `$.prompt()`: Prompts the user about a decision before following through.
 
 ```js
-const msg = await $.channel.send('Are you sure you want to delete this?');
+const msg = await $.channel.send("Are you sure you want to delete this?");
 $.prompt(msg, $.author.id, () => {
   delete this; // Replace this with actual code.
 });
@@ -226,7 +224,7 @@ $.prompt(msg, $.author.id, () => {
 - `$.callMemberByUsername()`: Convenience function to handle cases where someone isn't found by a username automatically.
 
 ```js
-$.callMemberByUsername($.message, $.args.join(' '), (member) => {
+$.callMemberByUsername($.message, $.args.join(" "), (member) => {
   $.channel.send(`Your nickname is ${member.nickname}.`);
 });
 ```

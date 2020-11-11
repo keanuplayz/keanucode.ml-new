@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: "3R2's obscure remixed songs."
 summary: "This is a post in which I describe my experience in trying to find the originals to some of 3R2's songs."
-hero: /images/posts/travbot.png
-thumb: /images/posts/travbot.png
+hero: /images/posts/3r2_kiva-spaced.png
+thumb: /images/posts/3r2_kiva.png
 tags:
   - Misc
 ---

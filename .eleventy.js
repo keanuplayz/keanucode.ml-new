@@ -48,6 +48,10 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('./_site/projects/**/*.md')
   })
 
+  eleventyConfig.addCollection('travbot', function (collection) {
+    return collection.getFilteredByGlob('./_site/projects/**/*.md')
+  })
+
   // only content in the `rayveal` directory
   eleventyConfig.addCollection('rayveal', function(collection) {
     return collection.getFilteredByGlob('./_site/projects/rayveal/*.md')
