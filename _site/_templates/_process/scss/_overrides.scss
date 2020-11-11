@@ -140,3 +140,12 @@ time {
 .item-links {
   font-family: $font-family-sans-serif;
 }
+
+.table-bordered {
+  thead {
+    th,
+    td {
+      color: red;
+    }
+  }
+}

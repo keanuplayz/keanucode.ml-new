@@ -77,3 +77,12 @@ $link-hover-decoration: none;
 $badge-font-weight: 400;
 
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.4);
+
+.table-bordered {
+  thead {
+    th,
+    td {
+      color: red;
+    }
+  }
+}
