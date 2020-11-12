@@ -13,19 +13,21 @@
   font-weight: 400;
 }
 
-
-h1, .h1 {
+h1,
+.h1 {
   color: $primary;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   color: $secondary;
   @include font-size(2rem);
   font-weight: 700;
 }
 
-h3, .h3 {
-  color: $special;  
+h3,
+.h3 {
+  color: $special;
 }
 
 .site-header {
@@ -141,11 +143,14 @@ time {
   font-family: $font-family-sans-serif;
 }
 
+// TODO turn this into a good looking table
 .table-bordered {
-  thead {
-    th,
-    td {
-      color: red;
-    }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  td,
+  tr,
+  th {
+    border: 3px solid grey;
   }
 }
