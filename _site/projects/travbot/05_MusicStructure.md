@@ -1,16 +1,16 @@
 ---
 layout: layouts/post-sidebar.njk
-title: Spefcfications
+title: Music Structure
 summary: A Discord bot built with modularity in mind.
 sidebar: travbot
 eleventyNavigation:
-  key: specifications
-  title: "Specifications"
+  key: music
+  title: "Music Structure"
   parent: travbot
   order: 2
 ---
 
-# The commands
+## The commands
 
 ```
 - "mhelp"   - Display a help embed.
@@ -30,7 +30,7 @@ eleventyNavigation:
 
 Now that the actual info about the functionality of this thing is out of the way, its storytime!
 
-## The music structure
+## Implementing the Music Structure
 
 Originally, I, keanucode, aimed to port the music structure of TravBot-v2 to this version.
 
@@ -56,7 +56,7 @@ So, I tried again with `discord.js-lavalink-musicbot`.
 
 ---
 
-## Fixing the broken library
+### Fixing the broken library
 
 First off; in the library's interface `LavaLinkNodeOptions`, option `id` was a *required* option:
 
@@ -100,14 +100,19 @@ const res = await axios.get(
     /* ... */
 )
 ```
+
 The library tries to fetch the URL of the Lavalink node. With *HTTPS*.
 I think you can see where this is going. An SSL error.
 Changed the `https` to `http`, and all is well.
 I republished the library under the name "[discord.js-lavalink-lib](https://npmjs.org/package/discord.js-lavalink-lib)" so I can easily install the non-broken version.
+
 ---
-## Implementing the functionality
+
+### Implementing the functionality
+
 There's nothing much to do there, honestly. Only one edit to the original snippet has to be made.
 The original example snippet has the following:
+
 ```ts
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -115,9 +120,11 @@ client.music = new (require('discord.js-lavalink-musicbot'))(client, {
     /* ...config... */
 });
 ```
+
 As you can see, this is... kind of disgusting. And on top of that, incompatible with TS.
 So, we have to change a few things. First off, since TS is strict, it'll tell you that `music` doesn't exist on `client`. Which is true. The `Client` class has no `music` property.
 So, we make `client.` an `any` type using keyword `as`:
+
 ```ts
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -125,4 +132,5 @@ const client = new Discord.Client();
   /* ...config... */
 });
 ```
+
 And that's about it. Launch up Lavalink, and start the bot.

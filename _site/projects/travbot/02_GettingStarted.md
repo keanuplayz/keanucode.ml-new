@@ -13,13 +13,13 @@ tags:
   - travbot
 ---
 
-# Getting Started
+## Getting Started
 
 1. `npm install`
 2. `npm run build`
 3. `npm start`
 
-# Getting Started (Developers)
+## Getting Started (Developers)
 
 1. `npm install`
 2. `npm run dev`

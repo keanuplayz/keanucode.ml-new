@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 3
 ---
 
-# Structure
+## Structure
 
 The top-level directory is reserved for files that have to be there for it to work as well as configuration files.
 
@@ -28,7 +28,7 @@ The top-level directory is reserved for files that have to be there for it to wo
 - `standard`: Contains all the standard data to be used with the project itself. It's part of the code and will not be checked for inaccuracies because it's not meant to be easily modified.
 - `docs`: Used for information about the design of the project.
 
-# Specific Files
+## Specific Files
 
 This list starts from `src`/`dist`.
 
@@ -42,7 +42,7 @@ This list starts from `src`/`dist`.
 - `core/wrappers`: Contains classes that wrap around values and provide extra functionality.
 - `core/permissions`: The file containing everything related to permissions.
 
-# Design Decisions
+## Design Decisions
 
 - All top-level files (relative to `src`/`dist`) should ideally be independent, one-time use scripts. This helps separate code that just initializes once and reusable code that forms the bulk of the main program itself. That's why all the file searching and loading commands/events will be done in `index`.
 - Wrapper objects were designed with the idea of letting you assign functions directly to native objects [without the baggage of actually doing so](https://developer.mozilla.org/en-US/docs/Web/JavaScript/The_performance_hazards_of__%5B%5BPrototype%5D%5D_mutation).
