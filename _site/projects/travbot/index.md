@@ -20,10 +20,10 @@ Thank you for coming on this journey with me, but it is time to put the big chan
 
 Special thanks to:
 
-- [@lexisother](https:/github.com/lexisother) (TravBot v2, structural overhaul. Reviewing PRs.)
-- [@WatDuhHekBro](https:/github.com/WatDuhHekBro) (a _lot_ of contributions to TravBot v2)
-- [@dmitmel](https:/github.com/dmitmel)
-- [@thgeraads](https:/github.com/thgeraads) (Ideas for various commands.)
+- [@lexisother](https://github.com/lexisother) (TravBot v2, structural overhaul. Reviewing PRs.)
+- [@WatDuhHekBro](https://github.com/WatDuhHekBro) (A _lot_ of contributions to TravBot v2, bui)
+- [@dmitmel](https://github.com/dmitmel) (Hosting the bot)
+- [@thgeraads](https://github.com/thgeraads) (Ideas for various commands.)
 
 ### License
 
