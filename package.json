@@ -70,7 +70,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.1",
-    "animate.css": "3.7.2",
+    "animate.css": "4.1.1",
     "bootstrap": "4.5.3",
     "browser-sync-webpack-plugin": "2.2.2",
     "jquery": "3.5.1",
