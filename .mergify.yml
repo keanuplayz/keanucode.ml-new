@@ -1,12 +1,11 @@
 pull_request_rules:
-  - name: automatic merge for Renovate pull requests
+  - name: Automatic merge for Renovate pull requests
     conditions:
       - author=renovate[bot]
-      - check-success=Travis CI - Pull Request
     actions:
       merge:
         method: squash
-  - name: delete head branch after merge
+  - name: Delete head branch after merge
     conditions:
       - merged
     actions:
