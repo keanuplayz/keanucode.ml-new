@@ -1,4 +1,10 @@
 pull_request_rules:
+  - name: Label pull requests
+    conditions: 
+      - author=renovate[bot]
+    actions:
+      label:
+        add: ['dependencies']
   - name: Automatic merge for Renovate pull requests
     conditions:
       - author=renovate[bot]
