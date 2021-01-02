@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: "Emptiness."
 summary: "This is a post in which I detail on a certain emptiness circulating in me."
-hero: /images/posts/new-start.jpg
-thumb: /images/posts/new-start.jpg
+hero: /images/posts/emptiness.jpeg
+thumb: /images/posts/emptiness.jpeg
 tags:
   - Meta
 ---
