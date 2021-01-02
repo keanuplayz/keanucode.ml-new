@@ -29,3 +29,20 @@ I dwell deeper and deeper into this labyrinth I seem to be stuck in, still looki
 
 Maybe I am destined to fail.
 Maybe this is all meant to happen, a series of events tied together by my subconscious, breaking me further and further.
+And yet, even I can confidently say this is definitely not the case, the lurking feeling of it being true after all grows ever more strong.
+It somehow continues to amplify exponentially.
+
+It just all feels like these are my mistakes.
+*I* was the one who messed up, even though I said I'd be careful.
+*I* was the one who was inattentive for my surroundings, even though always telling I would stay awake for whatever happens around me.
+*I* was the one who lost the battle I had sworn never to lose.
+And *yet*, I made all these mistakes.
+*Yet* I was inattentive and missed opportunities I could've seized to fix what I had broken.
+*Yet* I lost this battle of mine.
+
+I am lost and I don't know what to do.
+The spiral grows ever deeper, it goes further and further down. It seems to have no end.
+This raises a question. *Is there even an end?*
+Or am I going to be in this perpetual state of flowing down and down forever and ever?
+
+I suppose we'll find out.
