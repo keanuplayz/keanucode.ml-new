@@ -1,12 +1,14 @@
 ---
 layout: layouts/post.njk
-title: "A Quiet Night."
-summary: "This is more of a personal post. I just want to write something."
+title: 'A Quiet Night.'
+summary: 'This is more of a personal post. I just want to write something.'
+author: 'Keanu Timmermans'
 hero: /images/posts/quiet-night.jpg
 thumb: /images/posts/quiet-night.jpg
 tags:
-  - Misc
+  - Rant
 ---
+
 Tonight is a quiet night. I'm seated behind my desk, idling.
 Wondering about what to do.
 As I'm writing this, I'm listening to a compilation of dreamy [Super Mario Galaxy music](https://www.youtube.com/watch?v=nBFxLv73_eM).
@@ -14,7 +16,7 @@ As I'm writing this, I'm listening to a compilation of dreamy [Super Mario Galax
 There's so much I could be working on.
 I could be working on porting [TravBot](https://github.com/keanuplayz/TravBot)'s commands to [TravBot-v3](https://github.com/keanuplayz/TravBot-v3).
 I could be working on [Lexi's Website](https://github.com/lexisother/lexisother.tk).
-I could start a new project, although I'd have no idea *what*.
+I could start a new project, although I'd have no idea _what_.
 
 You see, in these times, it's really difficult to come up with things to do.
 There's certain projects that I've worked on in the past, which I could be working on right now.
@@ -29,10 +31,9 @@ Hopefully my mentality to work will return at the end of the week.
 By then, we have to go back to school. I'm assuming that'll fix things.
 I need some proper human contact.
 
-Progress
----
+## Progress
 
-Besides the slacking off that I've been doing, I *have* been doing some work on a couple of projects.
+Besides the slacking off that I've been doing, I _have_ been doing some work on a couple of projects.
 
 For example, I've finally started working properly on [TravBot-v3](https://github.com/keanuplayz/TravBot-v3).
 Since [WatDuhHekBro](https://github.com/WatDuhHekBro) finished the structure a couple of weeks ago, I've been porting commands from the old TravBot.

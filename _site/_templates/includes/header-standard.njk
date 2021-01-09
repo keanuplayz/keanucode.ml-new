@@ -8,8 +8,9 @@
         <p class="page-section-text text-light d-none d-md-block">
           {{summary | safe}}
         </p>
+        {% if author %}<p class="page-section-text text-light d-none d-md-block" style="font-size: 20px;">Author: {{ author }}</p> {% endif %}
       </div>
     </div>
   </div>
 </div>
-</header> 
+</header>

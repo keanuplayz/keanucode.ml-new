@@ -19,6 +19,7 @@
       {% endif %}
       </a>
       <p class="item-summary lead mb-1 text-body">{{ item.data.summary | safe }}</p>
+      {% if item.data.author %}<p class="item-author lead mb-1 text-body">Author: {{ item.data.author | safe }}</p>{% endif %}
       {% include "includes/links.njk" %}
       {% include "includes/tags.njk" %}
     </div>

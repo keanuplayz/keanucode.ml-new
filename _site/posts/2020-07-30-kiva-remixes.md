@@ -2,11 +2,13 @@
 layout: layouts/post.njk
 title: "3R2's obscure remixed songs."
 summary: "This is a post in which I describe my experience in trying to find the originals to some of KIVΛ's remixes."
+author: 'Keanu Timmermans'
 hero: /images/posts/3r2_kiva-spaced.png
 thumb: /images/posts/3r2_kiva.png
 tags:
   - Misc
 ---
+
 Today, I chose to finally go on a journey I've been planning to go on for a while.
 
 I'd like to talk about two songs in the rhythm game [Cytus 2](https://play.google.com/?id=com.rayark.cytus2).
@@ -21,9 +23,9 @@ The second is [Celestial Sounds](https://soundcloud.com/kivawu/3r2-celestial-sou
 
 So, if you were to look up `Celestial Sounds 3R2` on Google, you'd once again get KIVA's remix.
 
-Not the original track, *KIVΛ's remix*.
+Not the original track, _KIVΛ's remix_.
 
-Now, don't get me wrong here. KIVΛ makes *amazing* music. This track is certainly no exception.
+Now, don't get me wrong here. KIVΛ makes _amazing_ music. This track is certainly no exception.
 
 The only issue is, no matter where you search, be it Youtube, Spotify, Bandcamp, or even 3R2's website; you simply can't easily find the original.
 
@@ -45,7 +47,7 @@ I started searching for a website where I might have a chance at listening to th
 
 After about 20 minutes of non-stop browsing the web, I found nearly nothing.
 
-So, I resorted to asking the *Official Cytus Discord server.*
+So, I resorted to asking the _Official Cytus Discord server._
 
 Since "Prismatic Music Vol.1" was a Taiwanese release, I didn't have a lot of luck asking the folk in the normal channels.
 
@@ -91,7 +93,7 @@ Sadly, the website didn't give me much other than a 15 second preview of the son
 
 So, I started searching for a place where I could listen to the album.
 
-Eventually, after a *long*, ***long*** while, I found a playlist on BiliBili containing the long-lost [*original version* of Celestial Sounds](https://www.bilibili.com/video/BV1zW411C7rP?p=8).
+Eventually, after a _long_, **_long_** while, I found a playlist on BiliBili containing the long-lost [_original version_ of Celestial Sounds](https://www.bilibili.com/video/BV1zW411C7rP?p=8).
 
 ---
 
