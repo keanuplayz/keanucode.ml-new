@@ -16,13 +16,13 @@ excludeFromSitemap: true
 	</author>
 	{%- for post in collections.posts %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-	<item>
+	<entry>
 		<title>{{ post.data.title }}</title>
 		{% if post.data.author %}<author>{{ post.data.author }}</author>{% endif %}
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{% if post.data.date %} {{ post.data.date }} {% else %} {{ post.date | rssDate }} {% endif %}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-	</item>
+	</entry>
 	{%- endfor %}
 </feed>
