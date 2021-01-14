@@ -20,7 +20,7 @@ excludeFromSitemap: true
 		<title>{{ post.data.title }}</title>
 		{% if post.data.author %}<author>{{ post.data.author }}</author>{% endif %}
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{% if post.data.date %} {{ post.data.date }} {% else %} {{ post.date | rssDate }} {% endif %}</updated>
+		<updated>{% if post.data.date %}{{ post.data.date }}{% else %}{{ post.date | rssDate }}{% endif %}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>
