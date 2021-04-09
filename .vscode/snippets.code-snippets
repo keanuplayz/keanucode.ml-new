@@ -1,0 +1,19 @@
+{
+  "Post Header": {
+    "scope": "nunjucks",
+    "prefix": "ph",
+    "description": "A header containing all post metadata.",
+    "body": [
+      "---",
+      "layout: layouts/post.njk",
+      "title: ''",
+      "summary: ''",
+      "author: ''",
+      "hero: /images/posts/",
+      "thumb: /images/posts",
+      "tags:",
+      " - ",
+      "---"
+    ]
+  }
+}
