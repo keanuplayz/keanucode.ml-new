@@ -10,7 +10,7 @@ title: About Me
 navtitle: About
 ---
 
-Hi there. I'm Keanu Timmermans, and I'm a 14 year old hobbyist software developer. I mostly use Node.JS and Python to work on most of my projects, which are Discord bots and random programs nobody has any use for.
+Hi there. I'm Keanu Timmermans, and I'm a 15 year old hobbyist software developer. I mostly use Node.JS and Python to work on most of my projects, which are Discord bots and random programs nobody has any use for.
 
 I have no idea how to write about myself.
 
